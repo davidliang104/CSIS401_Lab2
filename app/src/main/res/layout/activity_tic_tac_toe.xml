@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TicTacToe"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pale_blue">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".TicTacToe">
+
+            <TableLayout
+                android:id="@+id/gameBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/b1"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+
+                    <Button
+                        android:id="@+id/b2"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+
+                    <Button
+                        android:id="@+id/b3"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/b4"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                    <Button
+                        android:id="@+id/b5"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                    <Button
+                        android:id="@+id/b6"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/b7"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                    <Button
+                        android:id="@+id/b8"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                    <Button
+                        android:id="@+id/b9"
+                        android:layout_width="110dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="50sp"
+                        android:backgroundTint="@color/grey"
+                        android:onClick="selectButton"/>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="40sp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/gameBoard"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="@+id/gameBoard"
+                app:layout_constraintTop_toBottomOf="@+id/gameBoard" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
